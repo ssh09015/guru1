@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>에어비앤비: 휴가용 임대 숙소, 통나무집, 비치 하우스, 독특한 숙소 및 체험</title>
+   <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
+   <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  <script type="text/javascript">
+
+     $(document).ready(function(){
+
+    var navHeight = $(".covid").height(); 
+
+    $(".scroll").hide();
+    
+
+    $(window).scroll(function(){
+        var rollIt = $(this).scrollTop() >= navHeight; 
+
+
+    if(rollIt){ 
+            $(".scroll").fadeIn(110).css({"position":"fixed"});
+            $(".search__box").fadeOut(110);
+            $(".searchicon").fadeOut(110);
+
+        }
+        else{
+            $(".scroll").fadeOut(110);
+            $(".search__box").fadeIn(110);
+            $(".searchicon").fadeIn(110);
+        }
+    });
+    
+});
+  </script>
+
+
+<style type="text/css">
+
+
+.menu__right a:active{
+   color: white;
+}
+.menu__right a:visited{
+   color: white;
+}
+
+input{
+   width: 120px;
+}
+input:focus {outline:none;}
+
+.line1{
+   display: inline-block;
+   margin-top: 18px;
+   margin-left: -6px;
+   width: 1px;
+   height: 32px;
+   position: absolute;
+   background-color: #DDDDDD;
+}
+.line2{
+   display: inline-block;
+   margin-top: 18px;
+   margin-left: -6px;
+   width: 1px;
+   height: 32px;
+   position: absolute;
+   background-color: #DDDDDD;
+}
+
+.line3{
+   display: inline-block;
+   margin-top: 18px;
+   margin-left: -2px;
+   width: 1px;
+   height: 32px;
+   position: absolute;
+   background-color: #DDDDDD;
+}
+.button__section{
+   width: 900px;
+   height: 66px;
+}
+*{
+   margin: 0px;
+   padding: 0px;
+}
+
+.search__box{
+   top: 80px;
+   left: 205px;
+   background-color: white;
+   border-radius: 50px;
+   width: 850px;
+   height: 66px;
+   box-shadow: 0px 16px 32px rgb(0 0 0 / 15%), 0px 3px 8px rgb(0 0 0 / 10%);
+}
+
+
+.local__button{
+   display: inline-block;
+   width: 273px;
+   height: 66px;
+}
+.local__button:hover{
+   background-color: #E6E6E6;
+   border-radius: 50px;
+   cursor: pointer;
+}
+.checkin__button{
+   margin-left: -6px;
+   display: inline-block;
+   width: 180px;
+   height: 66px;
+}
+
+.checkin__button:hover{
+   background-color: #E6E6E6;
+   border-radius: 50px;
+   cursor: pointer;
+}
+
+.checkout__button{
+   margin-left: -6px;
+   display: inline-block;
+   width: 191px;
+   height: 66px;
+}
+
+.checkout__button:hover{
+   background-color: #E6E6E6;
+   border-radius: 50px;
+   cursor: pointer;
+}
+
+.person__button{
+   position: absolute;
+   margin-left: 845px;
+   margin-top: 14px;
+   display: inline-block;
+   width: 210px;
+   height: 66px;
+}
+
+.person__button:hover{
+   background-color: #E6E6E6;
+   border-radius: 50px;
+   cursor: pointer;
+}
+
+.local__button1{
+   margin-top: 10px;
+   margin-left: 30px;
+}
+
+.local__button1 span{
+   font-size: 12px;
+   font-weight: 600;
+}
+
+.checkin__button1{
+   margin-top: 10px;
+   margin-left: 23px;
+}
+
+.checkin__button1 span{
+   font-size: 12px;
+   font-weight: 600;
+}
+
+.checkout__button1{
+   margin-top: 10px;
+   margin-left: 25px;
+}
+
+.checkout__button1 span{
+   font-size: 12px;
+   font-weight: 600;
+}
+
+.person__button1{
+   margin-top: 10px;
+   margin-left: 25px;
+}
+
+.person__button1 span{
+   font-size: 12px;
+   font-weight: 600;
+}
+
+
+
+.searchicon{
+   display: inline-block;
+   background-color: #FF385C;
+   border: 0;      
+   border-radius: 24px;
+   cursor: pointer;
+   top: 147px;
+   left: 999px;
+}
+
+.searchicon:hover{
+   background-color:#dc143c;
+}
+
+
+
+   .covid{
+      background-color: #222222;
+      text-decoration: underline ;
+      width: 100%;
+      height:58px;
+      box-shadow: 0px 40px 200px black;
+   }
+   .covid a{
+      color: #A3A3A3;
+   }
+   .covid a:hover{
+      color: gray;
+   }
+   #wrap{width:100%;}
+   
+   .scroll{
+        width:100%; 
+        height:80px; 
+        position:absolute;
+        background-color:white;
+        display: flex;
+        top:0;
+        box-shadow: 0px 1px 2px rgb(0 0 0 / 8%), 0px 4px 12px rgb(0 0 0 / 5%);
+     }
+
+    .logo__scroll{
+      cursor: pointer;
+      display: inline-block;
+      margin: 17px 0 0 85px;
+      color: #FF385C;
+      font-size: 35px;
+      font-weight: 800;
+      color: black;
+   }
+   .logo__scroll a{
+      color: black;
+   }
+   .logo__scroll a:active{
+      color: black;
+   }
+   .logo__scroll a:visted{
+      color: black;
+   }
+    .middlesearch__scroll{
+      margin-left: 300px;
+      margin-right: 240px;
+      margin-top: 17px;
+      display: inline-block;
+      cursor: pointer;
+      width: 300px;
+      height: 48px;
+      background-color: white;
+      border-radius: 30px;
+      border: 1px solid lightgray;
+      box-shadow: 2px 2px 2px rgb(0 0 0 / 8%), 2px 4px 12px rgb(0 0 0 / 5%);
+      flex: 0.55;
+    }
+    .middlesearch__scroll:hover{
+      box-shadow: 2px 2px 2px rgb(0 0 0 / 8%), 2px 4px 12px rgb(0 0 0 / 10%);
+    }
+    
+     .searchicon__scroll{
+      margin-top: 6px;
+      margin-right: 9px;
+      display: inline-block;
+      background-color: #FF385C;
+      border: 0;
+      border-radius: 24px;
+      cursor: pointer;
+      position: relative;
+      margin-left: 18px;
+     }
+     .start__scroll{
+      margin-left: 20px;
+      margin-top: 15px;
+      color: #222222;
+      font-size: 14px;
+      font-weight: 600;
+      width: 300px;
+     }
+     
+
+
+
+     .menu__right__scroll{
+         flex: 1;
+        display: inline-block;
+        color: black;
+        margin-top: 13px;
+        margin-left: -237px;
+     }
+     
+     .menu__right__scroll li{
+        list-style-type: none;
+        float: left;     
+     }
+
+     .hoverhost__scroll {
+      color: black;
+        text-align: center;
+        padding-top: 13px;
+     }
+     .hoverhost__scroll a: active{
+         color: black;
+     }
+     .hoverhost__scroll a:visted{
+      color: black;
+     }
+
+     .hoverhost__scroll:hover{
+      background-color: gainsboro;
+      border-radius: 40px;
+      cursor: pointer;
+     }
+
+   .logo{
+      margin: 18px 0 0 80px;
+      color: white;
+      font-size: 35px;
+      font-weight: 800;
+   }
+
+
+   .menu__middle a{
+      color: white;
+      text-decoration: none;
+      line-height: 40px;
+   }
+
+   .menu__middle li{
+      display: inline-block;
+      list-style-type: none;
+      float: left;
+      margin-left: 35px;
+      text-transform:uppercase;
+   }
+   .menu__middle{
+      color: white;
+      margin-top: 20px;
+      margin-left: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+   }
+
+   .off a:hover{
+      color: lightgray;
+   }
+   .on a:hover{
+      color: lightgray;
+   }
+
+
+
+   .off:after{
+      display:block;
+      content: '';
+      border-bottom: solid 3px lightgray;  
+      transform: scaleX(0);  
+      transition: transform 300ms ease-in-out;
+      margin-left: 3px;
+   }
+   .off:hover:after { 
+      transform: scaleX(0.1);
+   }
+
+   .on:after{
+      display:block;
+      content: '';
+      border-bottom: solid 3px lightgray;  
+      transform: scaleX(0);  
+      transition: transform 300ms ease-in-out;
+      margin-left: 3px;
+   }
+   .on:hover:after { 
+      transform: scaleX(0.03);
+   }
+
+   .room:after{
+      display:block;
+      content: '';
+      width: 18px;
+      border-bottom: solid 2px white;
+      margin-left: 8px;
+   }
+
+
+
+
+
+
+
+   .menu__right{
+      color: white;
+      margin-right: 77px;
+   }
+   .menu__right li{
+      list-style-type: none;
+      float: left;
+      margin-left: 22px;
+   }
+
+   .hoverhost:hover{
+      background-color: rgb(130, 130, 130);
+      border-radius: 40px;
+      cursor: pointer;
+   }
+   .hoverhost {
+      color: white;
+      text-align: center;
+      padding-top: 10px;
+   }
+   .hoverhost a:visited{
+      color: white;
+   }
+
+   .hoverearth__scroll{
+      text-align: center;
+      padding-left: 10px;
+      padding-top: 12px;
+   }
+   .hoverearth__scroll:hover{
+      background-color: gainsboro;
+      border-radius: 30px;
+      height: 80px;
+      cursor: pointer;
+   }
+
+
+
+   .hoverearth:hover{
+      background-color: rgb(130, 130, 130);
+      border-radius: 30px;
+      cursor: pointer;
+   }
+   .hoverearth{
+      text-align: center;
+      padding-top: 17px;
+   }
+
+
+   header{
+      background-image: url("./media/기본.WEBP");
+      background-size: 100% 100%;
+      height: 685px;
+   }
+
+
+   .text__box{         
+      margin-left: 80px;
+      margin-top: 145px;
+   }
+
+   .button__1{
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #FFFFFF;
+      line-height: 36px;
+      width: 120px;
+      border-radius: 8px;
+   }
+   .button__1 span{
+      font-size: 14px;
+      margin: 3px 5px 5px 15px;
+   }
+   .button__1 a{
+      text-decoration: none;
+      color: black;
+   }
+   .button__1 a:active{
+      color: black;
+   }
+
+
+
+
+
+
+
+   main{
+      margin: 20px 80px;
+      background-color: white;
+      background-size: 100% 100%;
+   }
+
+   .sec__title{
+      letter-spacing: -1px;
+      margin-top: 60px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 52px;
+      margin-bottom: 20px;
+   }
+
+   .card{
+      width: 100%;
+      text-align: left;
+      border-spacing: 8px;
+   }
+
+   th img{
+      border-radius: 10px;
+   }
+
+   .card td{
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+   }
+   .card th{
+      cursor: pointer;
+   }
+   .ad{
+      cursor: pointer;
+      position: relative;
+      margin-top: 60px;
+      background-image: url("./media/yuyeon.jpg");
+      background-size: 100% 100%;
+      height: 380px;
+      border-radius: 20px;
+   }
+   .ad a{
+      color: white;
+   }
+   .ad a:active{
+      color: white;
+   }
+   .ad a:visted{
+      color: white;
+   }
+
+   .ad h1{
+      position: absolute;
+      font-size: 48px;
+      top: 40px;
+      left: 80px;
+      letter-spacing: -1px;
+      line-height: 55px;
+   }
+   .ad div{
+      position: absolute;
+      font-size: 16px;
+      background-color: rgb(30, 30, 30);
+      color: white;
+      padding: 14px 24px;
+      line-height: 20px;
+      border-radius: 8px;
+      border: 0px;
+      top: 280px;
+      left: 80px;
+   }
+   .choo__box img{
+      border-radius: 12px;
+      margin-left: 10px;
+   }
+   .chooboxtable span{
+      font-size: 18px;
+      font-weight: 700;
+   }
+   .chooboxtable label{
+      cursor: pointer;
+   }
+
+   .special__box td{
+      cursor:pointer;
+   }
+   .special__box td img{
+      width: 360px;
+      height: 360px;
+      border-radius: 10px;
+      margin: 0px 10px 8px 2px;
+   }
+   .special__box h3 div{
+      font-size: 14px;
+      margin-top: 5px;
+      line-height: 20px;
+      color: rgb(62, 62, 62);
+      letter-spacing: -0.1px;
+   }
+
+   .ad2{
+      cursor: pointer;
+      position: relative;
+      margin-top: 70px;
+      background-image: url("./media/호스팅.jpg");
+      background-image: 100% 100%;
+      height: 390px;
+      border-radius: 20px;
+   }
+   .ad2 h1{
+      display: inline-block;
+      position: absolute;
+      color: white;
+      font-size: 48px;
+      top: 100px;
+      left: 80px;
+      letter-spacing: -2px;
+   }
+   .ad2 span{
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      font-size: 19px;
+      font-weight: 5;
+      letter-spacing: 0.3px;
+   }
+
+   .detail{
+      position: absolute;
+      font-size: 16px;
+      background-color: white;
+      color: black;
+      padding: 14px 24px;
+      line-height: 20px;
+      border-radius: 8px;
+      border: 0px;
+      top: 250px;
+      left: 80px;
+   }
+
+
+
+
+
+   footer{
+      margin-top: 60px;
+      background-color: rgb(243, 243, 243);
+      height: 578px;
+   }
+
+   .horizon{
+      background-color: lightgray;
+      height: 1px;
+   }
+
+   .menu__up{
+      width: 1100px;
+      margin-top: 50px;
+      margin-left: 80px;
+      margin-bottom: 50px;
+   }
+   .menu__up td{
+      vertical-align: top;
+   }
+
+   .menu__up ul li{
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 400;   
+      list-style: none;
+   }
+   .menu__up h4{
+      color: #222222;
+      font-size: 13px;
+   }
+
+   .menu__down{
+      width: 1100px;
+      border-top: 1px solid lightgray;
+      margin-left: 80px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+
+   .copyright{
+      font-size: 14px;
+      font-weight: 500;
+      display: inline-block;
+   }
+   .menu__ul ul li{
+      font-size: 13px;
+      font-weight: 400;
+      float: left;
+      margin-left: 10px;   
+      list-style-type: none;
+   }
+   .menu__ul a{
+      text-decoration: none;
+      color: black;
+   }
+   .menu__ul a:hover{
+      text-decoration: underline;
+   }
+   .menu__up a{
+      text-decoration: none;
+      color: black;
+   }
+   .menu__up a:hover{
+      text-decoration: underline;
+   }
+
+   .kr {
+      margin-left: -6px;
+   }
+
+
+   .kr img{
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+   }
+
+   .kr a{
+      color: black;
+   }
+   .kr a:hover{
+      color: #424242;
+   }
+   .kr a:active{
+      color: #424242;
+   }
+   .krlabel:hover{
+      color: #424242;
+   }
+   .won {
+       cursor:pointer;
+    }
+    .space {
+      cursor: pointer;
+   }
+   .logo__down img{
+      width: 21px;
+      height: 21px;
+   }
+
+   .logo__down ul{
+      float: right;
+   }
+
+   .logo__down ul li{
+      list-style-type: none;
+      float: left;
+      margin-left: 18px;
+      cursor: pointer;
+   }
+
+   
+
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+   <header>
+
+      <div id="wrap">
+
+         <div class="covid" style="color:#A3A3A3; text-align: center; line-height:58px;  font-size: 14px;letter-spacing: -0.4px;"><a href="#" style="colorcolor:#A3A3A3; font-weight: 600;">에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a></div>
+
+
+         <div class="scroll" style="position: relative; z-index: 100;">
+           <div class="logo__scroll"><a href="../main.html"><svg width="102" height="32" fill="currentcolor"><path d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5zM41.54 24.12a5.02 5.02 0 01-3.95-1.83 6.55 6.55 0 01-1.6-4.48 6.96 6.96 0 011.66-4.58 5.3 5.3 0 014.08-1.86 4.3 4.3 0 013.7 1.92l.1-1.57h2.92V23.8h-2.93l-.1-1.76a4.52 4.52 0 01-3.88 2.08zm.76-2.88c.58 0 1.09-.16 1.57-.45.44-.32.8-.74 1.08-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.55.45zM53.45 8.46c0 .35-.06.67-.22.93-.16.25-.38.48-.67.64-.29.16-.6.22-.92.22-.32 0-.64-.06-.93-.22a1.84 1.84 0 01-.67-.64 1.82 1.82 0 01-.22-.93c0-.36.07-.68.22-.93.16-.3.39-.48.67-.64.29-.16.6-.23.93-.23a1.84 1.84 0 011.6.86 2 2 0 01.21.94zm-3.4 15.3V11.7h3.18v12.08h-3.19zm11.68-8.9v.04c-.15-.07-.35-.1-.5-.13-.2-.04-.36-.04-.55-.04-.89 0-1.56.26-2 .8-.48.55-.7 1.32-.7 2.31v5.93h-3.19V11.69h2.93l.1 1.83c.32-.64.7-1.12 1.24-1.48a3.1 3.1 0 011.81-.5c.23 0 .45.02.64.06.1.03.16.03.22.06v3.2zm1.28 8.9V6.74h3.18v6.5c.45-.58.96-1.03 1.6-1.38a5.02 5.02 0 016.08 1.31 6.55 6.55 0 011.6 4.49 6.96 6.96 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.1 1.57-2.92.03zm6.15-2.52c.57 0 1.08-.16 1.56-.45.44-.32.8-.74 1.08-1.25.26-.51.38-1.12.38-1.8 0-.67-.12-1.28-.38-1.79a3.75 3.75 0 00-1.08-1.25 2.95 2.95 0 00-3.12 0c-.45.32-.8.74-1.09 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.56.45zm7.51 2.53V11.69h2.93l.1 1.57a3.96 3.96 0 013.54-1.89 4.1 4.1 0 013.82 2.44c.35.76.54 1.7.54 2.75v7.24h-3.19v-6.82c0-.84-.19-1.5-.57-1.99-.38-.48-.9-.74-1.56-.74-.48 0-.9.1-1.27.32-.35.23-.64.52-.86.93a2.7 2.7 0 00-.32 1.35v6.92h-3.16zm12.52 0V6.73h3.19v6.5a4.67 4.67 0 013.73-1.89 5.02 5.02 0 013.95 1.83 6.57 6.57 0 011.59 4.48 6.95 6.95 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.09 1.57-2.93.03zm6.18-2.53c.58 0 1.09-.16 1.56-.45.45-.32.8-.74 1.09-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a3.63 3.63 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.95.45 1.55.45z"></path></svg></a>
+           </div>
+
+           <div class="middlesearch__scroll"style="display: flex;">
+             <div class="start__scroll" style="flex: 23;">
+               검색 시작하기
+             </div>
+             <button type="button" class="searchicon__scroll" style="height: 36px;flex:4;"><img src="./media/search2.png" width="18px" height="18px"></button>
+           </div>
+
+           <div class="menu__right__scroll">
+             <ul> 
+               <a href="../page3/3.html"><li class="hoverhost__scroll" style="letter-spacing: -1px;width: 90px; height: 30px;font-size: 14px; font-weight: 800; margin-left: 170px;">호스트 되기</li></a>
+
+               <li class="hoverearth__scroll" style="width: 30px; height: 30px;"><img src="./media/earth2.png" width="18px" height="18px" style="border-radius: 30px;margin-top: 1px; margin-left: -9px;"></li>
+
+               <li class="member"><a href="#"><img src="./media/member1.png" width="80px" height="45px" style="border-radius: 30px; margin-left: 5px; margin-top: 0px;"></a></li>
+             </ul>
+           </div>
+      </div>
+
+
+
+
+
+
+
+
+      <nav>
+         <div class="menu">
+            <div class="logo" style="float: left; width: 20%;">
+               <a href="../main.html" style="color: white"><svg width="102" height="32" fill="currentcolor" style="display: inline-block;"><path d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5zM41.54 24.12a5.02 5.02 0 01-3.95-1.83 6.55 6.55 0 01-1.6-4.48 6.96 6.96 0 011.66-4.58 5.3 5.3 0 014.08-1.86 4.3 4.3 0 013.7 1.92l.1-1.57h2.92V23.8h-2.93l-.1-1.76a4.52 4.52 0 01-3.88 2.08zm.76-2.88c.58 0 1.09-.16 1.57-.45.44-.32.8-.74 1.08-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.55.45zM53.45 8.46c0 .35-.06.67-.22.93-.16.25-.38.48-.67.64-.29.16-.6.22-.92.22-.32 0-.64-.06-.93-.22a1.84 1.84 0 01-.67-.64 1.82 1.82 0 01-.22-.93c0-.36.07-.68.22-.93.16-.3.39-.48.67-.64.29-.16.6-.23.93-.23a1.84 1.84 0 011.6.86 2 2 0 01.21.94zm-3.4 15.3V11.7h3.18v12.08h-3.19zm11.68-8.9v.04c-.15-.07-.35-.1-.5-.13-.2-.04-.36-.04-.55-.04-.89 0-1.56.26-2 .8-.48.55-.7 1.32-.7 2.31v5.93h-3.19V11.69h2.93l.1 1.83c.32-.64.7-1.12 1.24-1.48a3.1 3.1 0 011.81-.5c.23 0 .45.02.64.06.1.03.16.03.22.06v3.2zm1.28 8.9V6.74h3.18v6.5c.45-.58.96-1.03 1.6-1.38a5.02 5.02 0 016.08 1.31 6.55 6.55 0 011.6 4.49 6.96 6.96 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.1 1.57-2.92.03zm6.15-2.52c.57 0 1.08-.16 1.56-.45.44-.32.8-.74 1.08-1.25.26-.51.38-1.12.38-1.8 0-.67-.12-1.28-.38-1.79a3.75 3.75 0 00-1.08-1.25 2.95 2.95 0 00-3.12 0c-.45.32-.8.74-1.09 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.56.45zm7.51 2.53V11.69h2.93l.1 1.57a3.96 3.96 0 013.54-1.89 4.1 4.1 0 013.82 2.44c.35.76.54 1.7.54 2.75v7.24h-3.19v-6.82c0-.84-.19-1.5-.57-1.99-.38-.48-.9-.74-1.56-.74-.48 0-.9.1-1.27.32-.35.23-.64.52-.86.93a2.7 2.7 0 00-.32 1.35v6.92h-3.16zm12.52 0V6.73h3.19v6.5a4.67 4.67 0 013.73-1.89 5.02 5.02 0 013.95 1.83 6.57 6.57 0 011.59 4.48 6.95 6.95 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.09 1.57-2.93.03zm6.18-2.53c.58 0 1.09-.16 1.56-.45.45-.32.8-.74 1.09-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a3.63 3.63 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.95.45 1.55.45z"></path></svg></a>
+            </div>
+
+            <div class="menu__middle" style="float: left; width: 30%;letter-spacing: -1px;">
+               <ul>
+                  <li class="room"><a href="#">숙소</a></li>
+                  <li class="off"><a href="#">체험</a></li>
+                  <li class="on"><a href="../page2/2.html">온라인 체험</a></li>
+               </ul>
+            </div>
+
+            <div class="menu__right" style="float: right; width: 30%; margin-left: 2px;">
+               <ul style="float: right;"> 
+                  <a href="../page3/3.html"><li class="hoverhost" style="letter-spacing: -1px; margin-top: 17px; width: 90px; height: 30px;font-size: 14px; font-weight: 800; margin-right: -22px;">호스트 되기</li></a>
+
+                  <li class="hoverearth" style="margin-top: 16px; width: 45px; height: 30px; margin-right: -12px; padding-top: 14px;"><img src="./media/earth1.png" width="20px" height="20px" style="border-radius: 30px; margin-top: -2px;"></li>
+
+                  <li><img src="./media/member.png" width="80px" height="45px" style="border-radius: 30px; margin-top: 18px; cursor: pointer;"></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+
+
+      <section>
+      
+   
+      <div class="search__box" style="position: relative;">
+            <label class="local__button" style="margin-left: -333px; margin-right: 0px;" >
+               <div class="local__button1"><span>위치</span><br><input type="text" class="textbox" placeholder="어디로 여행가세요?" style="border: none; background: transparent;"></div>
+            </label>
+            <div class="line1"></div>
+
+             <label class="checkin__button"><div class="checkin__button1"><span>체크인</span><br><input type="text" id="datepicker" placeholder="날짜 입력" style="border:none; background: transparent;"></div>
+            </label>
+            <div class="line2"></div>
+
+            <label class="checkout__button"><div class="checkout__button1"><span>체크아웃</span><br><input type="text" id="datepicker2" placeholder="날짜 입력" style="border:none; background: transparent;"></div>
+            </label>
+            <div class="line3"></div>
+
+
+            
+
+      </div>
+
+      <label class="person__button"><div class="person__button1"><span>인원</span><br><input type="text" class="countdown" placeholder="게스트 추가" style="border:none; background: transparent;"></div>
+            </label>
+
+
+      <div class="searchicon" style="position: absolute;">
+      <button type="button" class="searchicon" style="width: 48px; height: 48px;"><img src="./media/search2.png" width="25px" height="25px"></button></div>
+
+
+         <script>
+        $(function () {
+            $("#datepicker").datepicker();
+            $("#datepicker2").datepicker();
+        });
+    </script>
+
+   </section>
+
+
+
+
+      <section>
+         <div class="text__box" style="color: white; font-size: 48px;letter-spacing: -0.01em;  line-height: 55.2px;"><b>올림픽/패럴림픽<br>출전 선수와<br>함께하는<br>온라인 체험</b>
+
+         <div class="button1" style="margin-top: -7px;">
+            <a href="#"><div class="button__1"style="color: #000000;font-size: 14px;font-weight: 700;"><span>지금 둘러보기</span></a>
+            </div>
+         </div>
+      </section>
+   </header>
+
+
+   <main>
+      <section>
+         <div class="sec__title">가까운 여행지 둘러보기</div>
+         <table class="card">
+
+            <tr>
+            <th><img src="./media/seoul.jpg" height="64" width="64"></th><td colspan="1.5">서울<br><span style="font-weight: 500;">차로 15분 거리</span></td>
+            </div>
+
+
+            <th width="80px"><img src="./media/busan.jpg" height="64" width="64"></th>
+
+            <td colspan="1.5">부산<br><span style="font-weight: 500;">차로 5시간 거리</span></td>
+
+            <th width="80px"> <img src="./media/yangyang.png" height="64" width="64"></th>
+
+            <td colspan="1.5">양양군<br><span style="font-weight: 500;">차로 2.5시간 거리</span></td>
+
+            <th width="80px"><img src="./media/sokcho.png" height="64" width="64"></th>
+
+            <td colspan="1.5">속초시<br><span style="font-weight: 500;">차로 2.5시간 거리</span></td>
+            </tr>
+
+
+            <tr>
+            <th width="80px"><img src="./media/jejudo.png" height="64" width="64"></th>
+
+            <td>제주도(Jeju)<br><span style="font-weight: 500;">차로 7시간 거리</span></td>
+
+            <th width="80px"><img src="./media/gosung.jpg" height="64" width="64"></th>
+
+            <td>고성군<br><span style="font-weight: 500;">차로 3시간 거리</span></td>
+
+            <th width="80px"><img src="./media/wanju.png" height="64" width="64"></th>
+
+            <td>완주군<br><span style="font-weight: 500;">차로 3시간 거리</span></td>
+
+            <th width="80px"><img src="./media/daegu.jpg" height="64" width="64"></th>
+
+            <td>대구<br><span style="font-weight: 500;">차로 4시간 거리</span></td>
+            </tr>
+
+         </table>
+      </section>
+
+      <section>
+         <a href="../page4/4.html" target="_blank"><div class="ad">
+            <h1 style="color: black;">어디든 상관없이<br>떠나고 싶을<br>때에어비앤비가<br>도와드립니다!</h1>
+            <div class="yuyeonhan" style="font-weight: 700;">유연한 검색</div>
+         </div></a>
+      </section>
+ 
+
+      <section>
+         <div class="sec__title">어디에서나, 여행은 살아보는 거야!</div>
+
+         <div class="choo__box">
+            <table class="chooboxtable">
+               <td><label><img src="./media/choo1.jpg" style="width: 260px; height: 260px;"><br><span>&nbsp;자연생활을 만끽할 수 있는 숙소</span></label></td>
+   
+               <td><label><img src="./media/choo2.jpg" style="width: 260px; height: 260px;"><br><span>&nbsp;독특한 공간</span></label></td>
+
+               <td><label><img src="./media/choo3.jpg" style="width: 260px; height: 260px;"><br><span>&nbsp;집 전체</span></label></td>
+
+               <td><label><img src="./media/choo4.jpg" style="width: 260px; height: 260px;"><br><span>&nbsp;반려동물 동반 가능</span></label></td>
+            </table>
+         </div>
+            
+      </section>
+
+
+      <section>
+         <div class="sec__title">특별한 즐길 거리를 찾아보세요</div>
+            <table class="special__box">
+                  <td><img src="./media/체험.jpg"><br><h3>체험<br><div style="font-weight: 500;">가까운 곳에서 즐길 수 있는 잊지 못할 체험을 찾아보세요.</div></td>
+      
+                  <td><img src="./media/온라인.jpg"><br><h3>온라인 체험<br><div style="font-weight: 500;">호스트와 실시간으로 소통하면서 액티비티를 즐겨보세요.</div></td>
+
+                  <td><img src="./media/추천.jpg"><br><h3>추천 컬렉션:여행 본능을 깨우는 체험<br><div style="font-weight: 500;">온라인 체험으로 집에서 랜선 여행을 즐기세요.</div></td>
+               </table>
+      </section>
+
+      <section>
+         <div class="ad2">
+            <h1>호스팅 시작하기<br><span style="font-weight: 500;">숙소를 공유하여 부수입을 올리고 새로운<br>가능성을 만나세요.</span></h1>
+            <div class="detail" style="font-weight: 700;">자세히 알아보기</div>
+         </div>
+      </section>
+
+   </main>
+
+
+      <footer>
+         <div class="horizon"></div>
+         <div class="footer__area">
+            <table class="menu__up">
+               <td>
+                  <h4>소개</h4>
+                  <ul>
+                     <li><a href="">에어비앤비 이용 방법</a></li>
+                     <li><a href="">뉴스룸</a></li>
+                     <li><a href="">에어비앤비 2021</a></li>
+                     <li><a href="">투자자 정보</a></li>
+                     <li><a href="">에어비앤비 플러스</a></li>
+                     <li><a href="">에어비앤비 Luxe</a></li>
+                     <li><a href="">호텔투나잇</a></li>
+                     <li><a href="">에어비앤비 비즈니스 프로그램</a></li>
+                     <li><a href="">호스트 분들이 있기에 가능합니다</a></li>
+                     <li><a href="">채용정보</a></li>
+                     <li><a href="">창립자 편지</a></li>
+                  </ul>
+               </td>
+               
+               
+               <td style="padding-right: 40px;">
+                  <h4>커뮤니티</h4>
+                  <ul>
+                     <li><a href="">다양성 및 소속감</a></li>
+                     <li><a href="">접근성</a></li>
+                     <li><a href="">에어비앤비 어소시에이트</a></li>
+                     <li><a href="">구호 인력을 위한 숙소</a></li>
+                     <li><a href="">게스트 추천</a></li>
+                     <li><a href="">Airbnb.org</a></li>
+                  </ul>
+               </td>
+
+               <td style="padding-right: 40px;">
+                  <h4>호스팅하기</h4>
+                  <ul>
+                     <li><a href="">숙소 호스팅</a></li>
+                     <li><a href="">온라인 체험 호스팅하기</a></li>
+                     <li><a href="">체험 호스팅하기</a></li>
+                     <li><a href="">책임감 있는 호스팅</a></li>
+                     <li><a href="">자료 센터</a></li>
+                     <li><a href="">커뮤니티 센터</a></li>
+                  </ul>
+               </td>
+
+               <td>
+                  <h4>에어비앤비 지원</h4>
+                  <ul>
+                     <li><a href="">에어비앤비의 코로나19 대응 방안</a></li>
+                     <li><a href="">도움말 센터</a></li>
+                     <li><a href="">예약 취소 옵션</a></li>
+                     <li><a href="">에어비앤비 이웃 민원 지원</a></li>
+                     <li><a href="">신뢰와 안전</a></li>
+                  </ul>
+               </td>
+            </table>
+         </div>      
+
+
+         <div class="menu__down" style="margin-top: 10px;">
+            <section>
+               <div class="company" style="float: left; width: 680px;">
+                  <div class="copyright" style="float: left;">&copy; 2021 Airbnb, Inc.</div>
+                  <div class="menu__ul" style="float: left;">
+                     <ul>
+                        <li><span>·</span> <a href="">개인정보 처리방침</a></li>
+                        <li><span>·</span> <a href="">이용약관</a></li>
+                        <li><span>·</span> <a href="">사이트맵</a></li>
+                        <li><span>·</span> <a href="">한국의 변경된 환불 정책</a></li>
+                        <li><span>·</span> <a href="">회사 세부정보</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="kr" style="float: left; width: 197px;">
+                  
+                  <img src="./media/earth.png"style="margin-top: -2px;margin-bottom: -5px"><span style="font-size: 14px; font-weight: 700"><span class="space">&nbsp;&nbsp;&nbsp;</span><a href="">한국어(KR)</a></span>&nbsp;&nbsp;&nbsp;
+                  <label class="krlabel">
+                  <span class="won">₩&nbsp;&nbsp;</span><span style="font-size: 14px;font-weight: 700;"><a href="">KRW</a></span></label>
+               </div>      
+
+               <div class="logo__down" style="float: left; width: 225px;"> 
+                  <ul>
+                     <li><img src="./media/facebook.png"></li>
+                     <li><img src="./media/twitter.png"></li>
+                     <li><img src="./media/insta.png"></li>
+                     <li><img src="./media/blog.png"></li>
+                     <li><img src="./media/pencil.png"></li>
+                  </ul>
+               </div>
+            </section>
+            
+         </div>      
+      </footer>
+</body>
+</html>
