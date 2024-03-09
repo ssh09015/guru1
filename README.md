@@ -6,7 +6,7 @@
 
 
 ## 기능영상(00:37~00:58)
-https://www.youtube.com/watch?v=n6r2hHt7TmM
+[https://www.youtube.com/watch?v=n6r2hHt7TmM](https://youtu.be/n6r2hHt7TmM?feature=shared&t=37)
 
 
 ## 스크린샷
